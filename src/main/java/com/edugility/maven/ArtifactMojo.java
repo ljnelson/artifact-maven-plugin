@@ -73,7 +73,7 @@ public class ArtifactMojo extends AbstractMojo {
   /**
    * The {@link MavenProject} in effect.
    */
-  @Component
+  @Parameter(defaultValue = "${project}", readonly = true, required = true)
   private MavenProject project;
 
   /**
@@ -100,7 +100,7 @@ public class ArtifactMojo extends AbstractMojo {
   /**
    * The local {@link ArtifactRepository} in effect.
    */
-  @Parameter(defaultValue = "${localRepository}", readonly = true)
+  @Parameter(defaultValue = "${localRepository}", readonly = true, required = true)
   private ArtifactRepository localRepository;
 
   /**
