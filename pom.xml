@@ -34,7 +34,7 @@
     <dependency>
       <groupId>com.edugility</groupId>
       <artifactId>maven-artifacts</artifactId>
-      <version>1.0.1</version>
+      <version>1.0.2</version>
     </dependency>
 
     <dependency>
