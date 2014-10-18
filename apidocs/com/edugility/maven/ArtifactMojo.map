@@ -1,0 +1,17 @@
+<map id="G" name="G">
+<area shape="rect" id="node1_0" href="./ArtifactsProcessor.html" title="com.edugility.maven.ArtifactsProcessor" alt="" coords="15,1742,531,1831"/>
+<area shape="rect" id="node1" href="./ArtifactsProcessor.html" title="&lt;TABLE&gt;" alt="" coords="5,1737,542,1837"/>
+<area shape="rect" id="node2_1" href="./ArtifactMojo.html" title="com.edugility.maven.ArtifactMojo" alt="" coords="3749,209,4033,314"/>
+<area shape="rect" id="node2" href="./ArtifactMojo.html" title="&lt;TABLE&gt;" alt="" coords="3738,203,4043,319"/>
+<area shape="rect" id="node6_2" href="http://maven.apache.org/ref/current/apidocs/org/apache/maven/project/MavenProject.html" title="org.apache.maven.project.MavenProject" alt="" coords="577,374,1809,3199"/>
+<area shape="rect" id="node6" href="http://maven.apache.org/ref/current/apidocs/org/apache/maven/project/MavenProject.html" title="&lt;TABLE&gt;" alt="" coords="567,369,1820,3205"/>
+<area shape="rect" id="node8" href="null" title="&lt;TABLE&gt;" alt="" coords="1844,1729,3471,1845"/>
+<area shape="rect" id="node10_3" href="http://maven.apache.org/ref/current/apidocs/org/apache/maven/artifact/resolver/ArtifactResolver.html" title="org.apache.maven.artifact.resolver.ArtifactResolver" alt="" coords="3506,1670,6745,1903"/>
+<area shape="rect" id="node10" href="http://maven.apache.org/ref/current/apidocs/org/apache/maven/artifact/resolver/ArtifactResolver.html" title="&lt;TABLE&gt;" alt="" coords="3495,1665,6755,1909"/>
+<area shape="rect" id="node13_4" href="http://maven.apache.org/ref/current/apidocs/org/apache/maven/artifact/repository/ArtifactRepository.html" title="org.apache.maven.artifact.repository.ArtifactRepository" alt="" coords="6790,1526,7845,2047"/>
+<area shape="rect" id="node13" href="http://maven.apache.org/ref/current/apidocs/org/apache/maven/artifact/repository/ArtifactRepository.html" title="&lt;TABLE&gt;" alt="" coords="6779,1521,7855,2053"/>
+<area shape="rect" id="node15_5" href="http://maven.apache.org/ref/current/apidocs/org/apache/maven/artifact/resolver/filter/ArtifactFilter.html" title="org.apache.maven.artifact.resolver.filter.ArtifactFilter" alt="" coords="7890,1742,8267,1831"/>
+<area shape="rect" id="node15" href="http://maven.apache.org/ref/current/apidocs/org/apache/maven/artifact/resolver/filter/ArtifactFilter.html" title="&lt;TABLE&gt;" alt="" coords="7879,1737,8278,1837"/>
+<area shape="rect" id="node3_6" href="http://maven.apache.org/ref/current/apidocs/org/apache/maven/plugin/AbstractMojo.html" title="org.apache.maven.plugin.AbstractMojo" alt="" coords="3721,11,4061,149"/>
+<area shape="rect" id="node3" href="http://maven.apache.org/ref/current/apidocs/org/apache/maven/plugin/AbstractMojo.html" title="&lt;TABLE&gt;" alt="" coords="3710,6,4071,154"/>
+</map>

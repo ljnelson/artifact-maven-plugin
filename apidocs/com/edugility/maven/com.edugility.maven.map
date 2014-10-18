@@ -1,0 +1,10 @@
+<map id="G" name="G">
+<area shape="rect" id="node1_0" href="./HelpMojo.html" title="com.edugility.maven.HelpMojo" alt="" coords="16,35,112,125"/>
+<area shape="rect" id="node1" href="./HelpMojo.html" title="&lt;TABLE&gt;" alt="" coords="5,30,123,130"/>
+<area shape="rect" id="node2_1" href="./ArtifactsProcessor.html" title="com.edugility.maven.ArtifactsProcessor" alt="" coords="42,209,558,298"/>
+<area shape="rect" id="node2" href="./ArtifactsProcessor.html" title="&lt;TABLE&gt;" alt="" coords="31,203,569,303"/>
+<area shape="rect" id="node3_2" href="./ArtifactsProcessingException.html" title="com.edugility.maven.ArtifactsProcessingException" alt="" coords="488,11,808,149"/>
+<area shape="rect" id="node3" href="./ArtifactsProcessingException.html" title="&lt;TABLE&gt;" alt="" coords="477,6,819,154"/>
+<area shape="rect" id="node4_3" href="./ArtifactMojo.html" title="com.edugility.maven.ArtifactMojo" alt="" coords="158,27,442,133"/>
+<area shape="rect" id="node4" href="./ArtifactMojo.html" title="&lt;TABLE&gt;" alt="" coords="147,22,453,138"/>
+</map>
