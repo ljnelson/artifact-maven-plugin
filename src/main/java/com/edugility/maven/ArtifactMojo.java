@@ -60,7 +60,8 @@ import org.apache.maven.shared.dependency.graph.DependencyGraphBuilderException;
 
 /**
  * A mojo that sorts Maven artifacts topologically and then arranges
- * the processing of them with a user-supplied processor.
+ * the processing of them with a user-supplied {@linkplain
+ * ArtifactsProcessor processor}.
  *
  * @author <a href="http://about.me/lairdnelson"
  * target="_parent">Laird Nelson</a>

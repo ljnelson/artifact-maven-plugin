@@ -35,8 +35,54 @@ import org.apache.maven.plugin.logging.Log;
 
 import org.apache.maven.project.MavenProject;
 
+/**
+ * A processor of Maven {@link Artifact}s.
+ *
+ * @author <a href="http://about.me/lairdnelson"
+ * target="_parent">Laird Nelson</a>
+ *
+ * @see ArtifactMojo
+ */
 public interface ArtifactsProcessor {
 
+  /**
+   * Performs some operation on the supplied {@link Collection} of
+   * {@link Artifact}s in the context of the supplied {@link
+   * MavenProject} and returns a {@link Collection} of {@link
+   * Artifact}s representing the result.
+   *
+   * <p>Implementations of this method are permitted to return {@code
+   * null}.</p>
+   *
+   * <p>Implementations of this method are permitted to return the
+   * supplied {@link Collection} of {@link Artifact}s.</p>
+   *
+   * <p>Implementations of this method are permitted to mutate the
+   * supplied {@link Collection} and/or any of its elements.</p>
+   *
+   * <p>Implementations of this method must not mutate the supplied
+   * {@link MavenProject}.</p>
+   *
+   * @param project the {@link MavenProject} in the context of which
+   * processing will take place; must not be {@code null}
+   *
+   * @param artifacts the {@link Artifact}s to process; may be {@code
+   * null}
+   *
+   * @param log the {@link Log} to use when logging; may be {@code
+   * null}
+   *
+   * @return a {@link Collection} of {@link Artifact}s representing
+   * the result of processing, or {@code null}
+   *
+   * @exception ArtifactsProcessingException if an error occurs
+   *
+   * @see ArtifactMojo
+   *
+   * @see Artifact
+   * 
+   * @see MavenProject
+   */
   public Collection<? extends Artifact> process(final MavenProject project, final Collection<? extends Artifact> artifacts, final Log log) throws ArtifactsProcessingException;
 
 }

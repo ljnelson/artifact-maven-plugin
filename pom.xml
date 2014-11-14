@@ -34,7 +34,7 @@
     <dependency>
       <groupId>com.edugility</groupId>
       <artifactId>maven-artifacts</artifactId>
-      <version>1.0.2</version>
+      <version>1.0.3</version>
     </dependency>
 
     <dependency>
@@ -164,6 +164,7 @@
       <plugin>
         <groupId>com.github.github</groupId>
         <artifactId>site-maven-plugin</artifactId>
+        <version>0.10</version>
       </plugin>
 
     </plugins>
@@ -179,12 +180,15 @@
 
   <properties>
 
+    <!-- maven-release-plugin properties -->
+    <goals>deploy site-deploy</goals>
+
     <!-- maven-compiler-plugin properties -->
     <maven.compiler.source>1.6</maven.compiler.source>
     <maven.compiler.target>1.6</maven.compiler.target>
 
     <!-- maven-javadoc-plugin properties -->
-    <links>http://junit.org/javadoc/4.10/,http://maven.apache.org/ref/current/apidocs/</links>
+    <links>http://junit.org/apidocs/,http://maven.apache.org/ref/current/apidocs/</links>
     <umlGraphVersion>5.6.6</umlGraphVersion>
 
   </properties>

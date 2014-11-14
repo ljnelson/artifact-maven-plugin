@@ -27,32 +27,95 @@
  */
 package com.edugility.maven;
 
+import java.io.Serializable; // for javadoc only
+
 import java.util.Collection;
 
 import org.apache.maven.artifact.Artifact;
 
+/**
+ * An {@link Exception} indicating that something has gone wrong
+ * during {@linkplain ArtifactsProcessor#process(MavenProject,
+ * Collection, Log) <code>Artifact</code> processing}.
+ *
+ * @author <a href="http://about.me/lairdnelson"
+ * target="_parent">Laird Nelson</a>
+ *
+ * @see ArtifactsProcessor
+ *
+ * @see ArtifactMojo
+ */
 public class ArtifactsProcessingException extends Exception {
 
+  /**
+   * The version of this class for {@linkplain Serializable
+   * serialization} purposes.
+   */
   private static final long serialVersionUID = 1L;
 
+  /**
+   * The {@link Collection} of {@link Artifact}s that caused this
+   * {@link ArtifactsProcessingException} to be thrown.
+   *
+   * <p>This field may be {@code null}.</p>
+   *
+   * @see #setArtifacts(Collection)
+   */
   private Collection<? extends Artifact> artifacts;
 
+  /**
+   * Creates a new {@link ArtifactsProcessingException}.
+   */
   public ArtifactsProcessingException() {
     super();
   }
 
+  /**
+   * Creates a new {@link ArtifactsProcessingException}.
+   *
+   * @param message a message describing the error; may be {@code
+   * null}
+   */
   public ArtifactsProcessingException(final String message) {
     super(message);
   }
 
+  /**
+   * Creates a new {@link ArtifactsProcessingException}.
+   *
+   * @param cause the {@link Throwable} that caused this {@link
+   * ArtifactsProcessingException} to be thrown; may be {@code null}
+   */
   public ArtifactsProcessingException(final Throwable cause) {
     super(cause);
   }
 
+  /**
+   * Returns the {@link Collection} of {@link Artifact}s that caused
+   * this {@link ArtifactsProcessingException} to be thrown.
+   *
+   * <p>This method may return {@code null}.</p>
+   *
+   * @return the {@link Collection} of {@link Artifact}s that caused
+   * this {@link ArtifactsProcessingException} to be thrown, or {@code
+   * null}
+   *
+   * @see #setArtifacts(Collection)
+   */
   public Collection<? extends Artifact> getArtifacts() {
     return this.artifacts;
   }
 
+  /**
+   * Sets the {@link Collection} of {@link Artifact}s that caused this
+   * {@link ArtifactsProcessingException} to be thrown.
+   *
+   * @param artifacts the {@link Collection} of {@link Artifact}s that
+   * caused this {@link ArtifactsProcessingException} to be thrown;
+   * may be {@code null}
+   *
+   * @see #getArtifacts()
+   */
   public void setArtifacts(final Collection<? extends Artifact> artifacts) {
     this.artifacts = artifacts;
   }
