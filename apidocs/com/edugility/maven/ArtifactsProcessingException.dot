@@ -10,7 +10,7 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// com.edugility.maven.ArtifactsProcessingException
-	c46 [label=<<table title="com.edugility.maven.ArtifactsProcessingException" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./ArtifactsProcessingException.html">
+	c43 [label=<<table title="com.edugility.maven.ArtifactsProcessingException" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./ArtifactsProcessingException.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> ArtifactsProcessingException </td></tr>
 		</table></td></tr>
@@ -26,9 +26,9 @@ digraph G {
 		</table></td></tr>
 		</table>>, URL="./ArtifactsProcessingException.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// com.edugility.maven.ArtifactsProcessingException NAVASSOC org.apache.maven.artifact.Artifact
-	c46:p -> c49:p [taillabel="", label="", headlabel="*", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
+	c43:p -> c46:p [taillabel="", label="", headlabel="*", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
 	// org.apache.maven.artifact.Artifact
-	c49 [label=<<table title="org.apache.maven.artifact.Artifact" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="http://maven.apache.org/ref/current/apidocs/org/apache/maven/artifact/Artifact.html">
+	c46 [label=<<table title="org.apache.maven.artifact.Artifact" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="http://maven.apache.org/ref/current/apidocs/org/apache/maven/artifact/Artifact.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> org.apache.maven.artifact.Artifact </td></tr>

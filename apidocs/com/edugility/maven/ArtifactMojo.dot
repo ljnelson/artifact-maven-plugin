@@ -39,19 +39,19 @@ digraph G {
 	//com.edugility.maven.ArtifactMojo extends org.apache.maven.plugin.AbstractMojo
 	c25:p -> c20:p [dir=back,arrowtail=empty];
 	// com.edugility.maven.ArtifactMojo NAVASSOC org.apache.maven.project.MavenProject
-	c20:p -> c39:p [taillabel="", label="", headlabel="", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
+	c20:p -> c36:p [taillabel="", label="", headlabel="", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
 	// com.edugility.maven.ArtifactMojo NAVASSOC org.apache.maven.shared.dependency.graph.DependencyGraphBuilder
-	c20:p -> c40:p [taillabel="", label="", headlabel="", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
+	c20:p -> c37:p [taillabel="", label="", headlabel="", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
 	// com.edugility.maven.ArtifactMojo NAVASSOC org.apache.maven.artifact.resolver.ArtifactResolver
-	c20:p -> c41:p [taillabel="", label="", headlabel="", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
+	c20:p -> c38:p [taillabel="", label="", headlabel="", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
 	// com.edugility.maven.ArtifactMojo NAVASSOC com.edugility.maven.ArtifactsProcessor
 	c20:p -> c15:p [taillabel="", label="", headlabel="", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
 	// com.edugility.maven.ArtifactMojo NAVASSOC org.apache.maven.artifact.repository.ArtifactRepository
-	c20:p -> c42:p [taillabel="", label="", headlabel="", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
+	c20:p -> c39:p [taillabel="", label="", headlabel="", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
 	// com.edugility.maven.ArtifactMojo NAVASSOC org.apache.maven.artifact.resolver.filter.ArtifactFilter
-	c20:p -> c43:p [taillabel="", label="", headlabel="", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
+	c20:p -> c40:p [taillabel="", label="", headlabel="", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
 	// org.apache.maven.artifact.resolver.filter.ArtifactFilter
-	c43 [label=<<table title="org.apache.maven.artifact.resolver.filter.ArtifactFilter" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="http://maven.apache.org/ref/current/apidocs/org/apache/maven/artifact/resolver/filter/ArtifactFilter.html">
+	c40 [label=<<table title="org.apache.maven.artifact.resolver.filter.ArtifactFilter" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="http://maven.apache.org/ref/current/apidocs/org/apache/maven/artifact/resolver/filter/ArtifactFilter.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> org.apache.maven.artifact.resolver.filter.ArtifactFilter </td></tr>
@@ -64,7 +64,7 @@ digraph G {
 		</table></td></tr>
 		</table>>, URL="http://maven.apache.org/ref/current/apidocs/org/apache/maven/artifact/resolver/filter/ArtifactFilter.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.apache.maven.project.MavenProject
-	c39 [label=<<table title="org.apache.maven.project.MavenProject" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="http://maven.apache.org/ref/current/apidocs/org/apache/maven/project/MavenProject.html">
+	c36 [label=<<table title="org.apache.maven.project.MavenProject" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="http://maven.apache.org/ref/current/apidocs/org/apache/maven/project/MavenProject.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> org.apache.maven.project.MavenProject </td></tr>
 		</table></td></tr>
@@ -77,11 +77,8 @@ digraph G {
 <tr><td align="left" balign="left"> + MavenProject() </td></tr>
 <tr><td align="left" balign="left"> + MavenProject(arg0 : org.apache.maven.model.Model) </td></tr>
 <tr><td align="left" balign="left"> + MavenProject(arg0 : org.apache.maven.project.MavenProject) </td></tr>
-<tr><td align="left" balign="left"> + MavenProject(arg0 : org.apache.maven.model.Model, arg1 : org.apache.maven.repository.RepositorySystem) </td></tr>
 <tr><td align="left" balign="left"> + getParentFile() : java.io.File </td></tr>
 <tr><td align="left" balign="left"> + setParentFile(arg0 : java.io.File) </td></tr>
-<tr><td align="left" balign="left"> + createArtifacts(arg0 : org.apache.maven.artifact.factory.ArtifactFactory, arg1 : java.lang.String, arg2 : org.apache.maven.artifact.resolver.filter.ArtifactFilter) : java.util.Set&lt;org.apache.maven.artifact.Artifact&gt; </td></tr>
-<tr><td align="left" balign="left"> + getModulePathAdjustment(arg0 : org.apache.maven.project.MavenProject) : java.lang.String </td></tr>
 <tr><td align="left" balign="left"> + getArtifact() : org.apache.maven.artifact.Artifact </td></tr>
 <tr><td align="left" balign="left"> + setArtifact(arg0 : org.apache.maven.artifact.Artifact) </td></tr>
 <tr><td align="left" balign="left"> + getModel() : org.apache.maven.model.Model </td></tr>
@@ -90,28 +87,18 @@ digraph G {
 <tr><td align="left" balign="left"> + hasParent() : boolean </td></tr>
 <tr><td align="left" balign="left"> + getFile() : java.io.File </td></tr>
 <tr><td align="left" balign="left"> + setFile(arg0 : java.io.File) </td></tr>
+<tr><td align="left" balign="left"> + setPomFile(arg0 : java.io.File) </td></tr>
 <tr><td align="left" balign="left"> + getBasedir() : java.io.File </td></tr>
 <tr><td align="left" balign="left"> + setDependencies(arg0 : java.util.List&lt;org.apache.maven.model.Dependency&gt;) </td></tr>
 <tr><td align="left" balign="left"> + getDependencies() : java.util.List&lt;org.apache.maven.model.Dependency&gt; </td></tr>
 <tr><td align="left" balign="left"> + getDependencyManagement() : org.apache.maven.model.DependencyManagement </td></tr>
 <tr><td align="left" balign="left"> + addCompileSourceRoot(arg0 : java.lang.String) </td></tr>
-<tr><td align="left" balign="left"> + addScriptSourceRoot(arg0 : java.lang.String) </td></tr>
 <tr><td align="left" balign="left"> + addTestCompileSourceRoot(arg0 : java.lang.String) </td></tr>
 <tr><td align="left" balign="left"> + getCompileSourceRoots() : java.util.List&lt;java.lang.String&gt; </td></tr>
-<tr><td align="left" balign="left"> + getScriptSourceRoots() : java.util.List&lt;java.lang.String&gt; </td></tr>
 <tr><td align="left" balign="left"> + getTestCompileSourceRoots() : java.util.List&lt;java.lang.String&gt; </td></tr>
 <tr><td align="left" balign="left"> + getCompileClasspathElements() : java.util.List&lt;java.lang.String&gt; </td></tr>
-<tr><td align="left" balign="left"> + getCompileArtifacts() : java.util.List&lt;org.apache.maven.artifact.Artifact&gt; </td></tr>
-<tr><td align="left" balign="left"> + getCompileDependencies() : java.util.List&lt;org.apache.maven.model.Dependency&gt; </td></tr>
 <tr><td align="left" balign="left"> + getTestClasspathElements() : java.util.List&lt;java.lang.String&gt; </td></tr>
-<tr><td align="left" balign="left"> + getTestArtifacts() : java.util.List&lt;org.apache.maven.artifact.Artifact&gt; </td></tr>
-<tr><td align="left" balign="left"> + getTestDependencies() : java.util.List&lt;org.apache.maven.model.Dependency&gt; </td></tr>
 <tr><td align="left" balign="left"> + getRuntimeClasspathElements() : java.util.List&lt;java.lang.String&gt; </td></tr>
-<tr><td align="left" balign="left"> + getRuntimeArtifacts() : java.util.List&lt;org.apache.maven.artifact.Artifact&gt; </td></tr>
-<tr><td align="left" balign="left"> + getRuntimeDependencies() : java.util.List&lt;org.apache.maven.model.Dependency&gt; </td></tr>
-<tr><td align="left" balign="left"> + getSystemClasspathElements() : java.util.List&lt;java.lang.String&gt; </td></tr>
-<tr><td align="left" balign="left"> + getSystemArtifacts() : java.util.List&lt;org.apache.maven.artifact.Artifact&gt; </td></tr>
-<tr><td align="left" balign="left"> + getSystemDependencies() : java.util.List&lt;org.apache.maven.model.Dependency&gt; </td></tr>
 <tr><td align="left" balign="left"> + setModelVersion(arg0 : java.lang.String) </td></tr>
 <tr><td align="left" balign="left"> + getModelVersion() : java.lang.String </td></tr>
 <tr><td align="left" balign="left"> + getId() : java.lang.String </td></tr>
@@ -157,8 +144,6 @@ digraph G {
 <tr><td align="left" balign="left"> + getTestResources() : java.util.List&lt;org.apache.maven.model.Resource&gt; </td></tr>
 <tr><td align="left" balign="left"> + addResource(arg0 : org.apache.maven.model.Resource) </td></tr>
 <tr><td align="left" balign="left"> + addTestResource(arg0 : org.apache.maven.model.Resource) </td></tr>
-<tr><td align="left" balign="left"> + setReporting(arg0 : org.apache.maven.model.Reporting) </td></tr>
-<tr><td align="left" balign="left"> + getReporting() : org.apache.maven.model.Reporting </td></tr>
 <tr><td align="left" balign="left"> + setLicenses(arg0 : java.util.List&lt;org.apache.maven.model.License&gt;) </td></tr>
 <tr><td align="left" balign="left"> + getLicenses() : java.util.List&lt;org.apache.maven.model.License&gt; </td></tr>
 <tr><td align="left" balign="left"> + addLicense(arg0 : org.apache.maven.model.License) </td></tr>
@@ -168,16 +153,9 @@ digraph G {
 <tr><td align="left" balign="left"> + setPluginArtifacts(arg0 : java.util.Set&lt;org.apache.maven.artifact.Artifact&gt;) </td></tr>
 <tr><td align="left" balign="left"> + getPluginArtifacts() : java.util.Set&lt;org.apache.maven.artifact.Artifact&gt; </td></tr>
 <tr><td align="left" balign="left"> + getPluginArtifactMap() : java.util.Map&lt;java.lang.String, org.apache.maven.artifact.Artifact&gt; </td></tr>
-<tr><td align="left" balign="left"> + setReportArtifacts(arg0 : java.util.Set&lt;org.apache.maven.artifact.Artifact&gt;) </td></tr>
-<tr><td align="left" balign="left"> + getReportArtifacts() : java.util.Set&lt;org.apache.maven.artifact.Artifact&gt; </td></tr>
-<tr><td align="left" balign="left"> + getReportArtifactMap() : java.util.Map&lt;java.lang.String, org.apache.maven.artifact.Artifact&gt; </td></tr>
-<tr><td align="left" balign="left"> + setExtensionArtifacts(arg0 : java.util.Set&lt;org.apache.maven.artifact.Artifact&gt;) </td></tr>
-<tr><td align="left" balign="left"> + getExtensionArtifacts() : java.util.Set&lt;org.apache.maven.artifact.Artifact&gt; </td></tr>
-<tr><td align="left" balign="left"> + getExtensionArtifactMap() : java.util.Map&lt;java.lang.String, org.apache.maven.artifact.Artifact&gt; </td></tr>
 <tr><td align="left" balign="left"> + setParentArtifact(arg0 : org.apache.maven.artifact.Artifact) </td></tr>
 <tr><td align="left" balign="left"> + getParentArtifact() : org.apache.maven.artifact.Artifact </td></tr>
 <tr><td align="left" balign="left"> + getRepositories() : java.util.List&lt;org.apache.maven.model.Repository&gt; </td></tr>
-<tr><td align="left" balign="left"> + getReportPlugins() : java.util.List&lt;org.apache.maven.model.ReportPlugin&gt; </td></tr>
 <tr><td align="left" balign="left"> + getBuildPlugins() : java.util.List&lt;org.apache.maven.model.Plugin&gt; </td></tr>
 <tr><td align="left" balign="left"> + getModules() : java.util.List&lt;java.lang.String&gt; </td></tr>
 <tr><td align="left" balign="left"> + getPluginManagement() : org.apache.maven.model.PluginManagement </td></tr>
@@ -187,8 +165,8 @@ digraph G {
 <tr><td align="left" balign="left"> + getPluginArtifactRepositories() : java.util.List&lt;org.apache.maven.artifact.repository.ArtifactRepository&gt; </td></tr>
 <tr><td align="left" balign="left"> + getDistributionManagementArtifactRepository() : org.apache.maven.artifact.repository.ArtifactRepository </td></tr>
 <tr><td align="left" balign="left"> + getPluginRepositories() : java.util.List&lt;org.apache.maven.model.Repository&gt; </td></tr>
-<tr><td align="left" balign="left"> + getRemoteProjectRepositories() : java.util.List&lt;org.sonatype.aether.repository.RemoteRepository&gt; </td></tr>
-<tr><td align="left" balign="left"> + getRemotePluginRepositories() : java.util.List&lt;org.sonatype.aether.repository.RemoteRepository&gt; </td></tr>
+<tr><td align="left" balign="left"> + getRemoteProjectRepositories() : java.util.List&lt;org.eclipse.aether.repository.RemoteRepository&gt; </td></tr>
+<tr><td align="left" balign="left"> + getRemotePluginRepositories() : java.util.List&lt;org.eclipse.aether.repository.RemoteRepository&gt; </td></tr>
 <tr><td align="left" balign="left"> + setActiveProfiles(arg0 : java.util.List&lt;org.apache.maven.model.Profile&gt;) </td></tr>
 <tr><td align="left" balign="left"> + getActiveProfiles() : java.util.List&lt;org.apache.maven.model.Profile&gt; </td></tr>
 <tr><td align="left" balign="left"> + setInjectedProfileIds(arg0 : java.lang.String, arg1 : java.util.List&lt;java.lang.String&gt;) </td></tr>
@@ -196,7 +174,6 @@ digraph G {
 <tr><td align="left" balign="left"> + addAttachedArtifact(arg0 : org.apache.maven.artifact.Artifact) </td></tr>
 <tr><td align="left" balign="left"> + getAttachedArtifacts() : java.util.List&lt;org.apache.maven.artifact.Artifact&gt; </td></tr>
 <tr><td align="left" balign="left"> + getGoalConfiguration(arg0 : java.lang.String, arg1 : java.lang.String, arg2 : java.lang.String, arg3 : java.lang.String) : org.codehaus.plexus.util.xml.Xpp3Dom </td></tr>
-<tr><td align="left" balign="left"> + getReportConfiguration(arg0 : java.lang.String, arg1 : java.lang.String, arg2 : java.lang.String) : org.codehaus.plexus.util.xml.Xpp3Dom </td></tr>
 <tr><td align="left" balign="left"> + getExecutionProject() : org.apache.maven.project.MavenProject </td></tr>
 <tr><td align="left" balign="left"> + setExecutionProject(arg0 : org.apache.maven.project.MavenProject) </td></tr>
 <tr><td align="left" balign="left"> + getCollectedProjects() : java.util.List&lt;org.apache.maven.project.MavenProject&gt; </td></tr>
@@ -213,7 +190,6 @@ digraph G {
 <tr><td align="left" balign="left"> + hashCode() : int </td></tr>
 <tr><td align="left" balign="left"> + getBuildExtensions() : java.util.List&lt;org.apache.maven.model.Extension&gt; </td></tr>
 <tr><td align="left" balign="left"> + addProjectReference(arg0 : org.apache.maven.project.MavenProject) </td></tr>
-<tr><td align="left" balign="left"> + attachArtifact(arg0 : java.lang.String, arg1 : java.lang.String, arg2 : java.io.File) </td></tr>
 <tr><td align="left" balign="left"> + getProperties() : java.util.Properties </td></tr>
 <tr><td align="left" balign="left"> + getFilters() : java.util.List&lt;java.lang.String&gt; </td></tr>
 <tr><td align="left" balign="left"> + getProjectReferences() : java.util.Map&lt;java.lang.String, org.apache.maven.project.MavenProject&gt; </td></tr>
@@ -222,33 +198,57 @@ digraph G {
 <tr><td align="left" balign="left"> + getDefaultGoal() : java.lang.String </td></tr>
 <tr><td align="left" balign="left"> + getPlugin(arg0 : java.lang.String) : org.apache.maven.model.Plugin </td></tr>
 <tr><td align="left" balign="left"> + toString() : java.lang.String </td></tr>
-<tr><td align="left" balign="left"> + writeModel(arg0 : java.io.Writer) </td></tr>
-<tr><td align="left" balign="left"> + writeOriginalModel(arg0 : java.io.Writer) </td></tr>
 <tr><td align="left" balign="left"> + clone() : org.apache.maven.project.MavenProject </td></tr>
-<tr><td align="left" balign="left"> # setModel(arg0 : org.apache.maven.model.Model) </td></tr>
+<tr><td align="left" balign="left"> + setModel(arg0 : org.apache.maven.model.Model) </td></tr>
 <tr><td align="left" balign="left"> # setAttachedArtifacts(arg0 : java.util.List&lt;org.apache.maven.artifact.Artifact&gt;) </td></tr>
 <tr><td align="left" balign="left"> # setCompileSourceRoots(arg0 : java.util.List&lt;java.lang.String&gt;) </td></tr>
 <tr><td align="left" balign="left"> # setTestCompileSourceRoots(arg0 : java.util.List&lt;java.lang.String&gt;) </td></tr>
-<tr><td align="left" balign="left"> # setScriptSourceRoots(arg0 : java.util.List&lt;java.lang.String&gt;) </td></tr>
 <tr><td align="left" balign="left"> # getReleaseArtifactRepository() : org.apache.maven.artifact.repository.ArtifactRepository </td></tr>
 <tr><td align="left" balign="left"> # getSnapshotArtifactRepository() : org.apache.maven.artifact.repository.ArtifactRepository </td></tr>
-<tr><td align="left" balign="left"> + replaceWithActiveArtifact(arg0 : org.apache.maven.artifact.Artifact) : org.apache.maven.artifact.Artifact </td></tr>
 <tr><td align="left" balign="left"> + setContextValue(arg0 : java.lang.String, arg1 : java.lang.Object) </td></tr>
 <tr><td align="left" balign="left"> + getContextValue(arg0 : java.lang.String) : java.lang.Object </td></tr>
 <tr><td align="left" balign="left"> + setClassRealm(arg0 : org.codehaus.plexus.classworlds.realm.ClassRealm) </td></tr>
 <tr><td align="left" balign="left"> + getClassRealm() : org.codehaus.plexus.classworlds.realm.ClassRealm </td></tr>
-<tr><td align="left" balign="left"> + setExtensionDependencyFilter(arg0 : org.sonatype.aether.graph.DependencyFilter) </td></tr>
-<tr><td align="left" balign="left"> + getExtensionDependencyFilter() : org.sonatype.aether.graph.DependencyFilter </td></tr>
+<tr><td align="left" balign="left"> + setExtensionDependencyFilter(arg0 : org.eclipse.aether.graph.DependencyFilter) </td></tr>
+<tr><td align="left" balign="left"> + getExtensionDependencyFilter() : org.eclipse.aether.graph.DependencyFilter </td></tr>
 <tr><td align="left" balign="left"> + setResolvedArtifacts(arg0 : java.util.Set&lt;org.apache.maven.artifact.Artifact&gt;) </td></tr>
 <tr><td align="left" balign="left"> + setArtifactFilter(arg0 : org.apache.maven.artifact.resolver.filter.ArtifactFilter) </td></tr>
 <tr><td align="left" balign="left"> + hasLifecyclePhase(arg0 : java.lang.String) : boolean </td></tr>
 <tr><td align="left" balign="left"> + addLifecyclePhase(arg0 : java.lang.String) </td></tr>
+<tr><td align="left" balign="left"> + getModulePathAdjustment(arg0 : org.apache.maven.project.MavenProject) : java.lang.String </td></tr>
+<tr><td align="left" balign="left"> + createArtifacts(arg0 : org.apache.maven.artifact.factory.ArtifactFactory, arg1 : java.lang.String, arg2 : org.apache.maven.artifact.resolver.filter.ArtifactFilter) : java.util.Set&lt;org.apache.maven.artifact.Artifact&gt; </td></tr>
+<tr><td align="left" balign="left"> # setScriptSourceRoots(arg0 : java.util.List&lt;java.lang.String&gt;) </td></tr>
+<tr><td align="left" balign="left"> + addScriptSourceRoot(arg0 : java.lang.String) </td></tr>
+<tr><td align="left" balign="left"> + getScriptSourceRoots() : java.util.List&lt;java.lang.String&gt; </td></tr>
+<tr><td align="left" balign="left"> + getCompileArtifacts() : java.util.List&lt;org.apache.maven.artifact.Artifact&gt; </td></tr>
+<tr><td align="left" balign="left"> + getCompileDependencies() : java.util.List&lt;org.apache.maven.model.Dependency&gt; </td></tr>
+<tr><td align="left" balign="left"> + getTestArtifacts() : java.util.List&lt;org.apache.maven.artifact.Artifact&gt; </td></tr>
+<tr><td align="left" balign="left"> + getTestDependencies() : java.util.List&lt;org.apache.maven.model.Dependency&gt; </td></tr>
+<tr><td align="left" balign="left"> + getRuntimeDependencies() : java.util.List&lt;org.apache.maven.model.Dependency&gt; </td></tr>
+<tr><td align="left" balign="left"> + getRuntimeArtifacts() : java.util.List&lt;org.apache.maven.artifact.Artifact&gt; </td></tr>
+<tr><td align="left" balign="left"> + getSystemClasspathElements() : java.util.List&lt;java.lang.String&gt; </td></tr>
+<tr><td align="left" balign="left"> + getSystemArtifacts() : java.util.List&lt;org.apache.maven.artifact.Artifact&gt; </td></tr>
+<tr><td align="left" balign="left"> + getSystemDependencies() : java.util.List&lt;org.apache.maven.model.Dependency&gt; </td></tr>
+<tr><td align="left" balign="left"> + setReporting(arg0 : org.apache.maven.model.Reporting) </td></tr>
+<tr><td align="left" balign="left"> + getReporting() : org.apache.maven.model.Reporting </td></tr>
+<tr><td align="left" balign="left"> + setReportArtifacts(arg0 : java.util.Set&lt;org.apache.maven.artifact.Artifact&gt;) </td></tr>
+<tr><td align="left" balign="left"> + getReportArtifacts() : java.util.Set&lt;org.apache.maven.artifact.Artifact&gt; </td></tr>
+<tr><td align="left" balign="left"> + getReportArtifactMap() : java.util.Map&lt;java.lang.String, org.apache.maven.artifact.Artifact&gt; </td></tr>
+<tr><td align="left" balign="left"> + setExtensionArtifacts(arg0 : java.util.Set&lt;org.apache.maven.artifact.Artifact&gt;) </td></tr>
+<tr><td align="left" balign="left"> + getExtensionArtifacts() : java.util.Set&lt;org.apache.maven.artifact.Artifact&gt; </td></tr>
+<tr><td align="left" balign="left"> + getExtensionArtifactMap() : java.util.Map&lt;java.lang.String, org.apache.maven.artifact.Artifact&gt; </td></tr>
+<tr><td align="left" balign="left"> + getReportPlugins() : java.util.List&lt;org.apache.maven.model.ReportPlugin&gt; </td></tr>
+<tr><td align="left" balign="left"> + getReportConfiguration(arg0 : java.lang.String, arg1 : java.lang.String, arg2 : java.lang.String) : org.codehaus.plexus.util.xml.Xpp3Dom </td></tr>
+<tr><td align="left" balign="left"> + attachArtifact(arg0 : java.lang.String, arg1 : java.lang.String, arg2 : java.io.File) </td></tr>
+<tr><td align="left" balign="left"> + writeModel(arg0 : java.io.Writer) </td></tr>
+<tr><td align="left" balign="left"> + writeOriginalModel(arg0 : java.io.Writer) </td></tr>
+<tr><td align="left" balign="left"> + replaceWithActiveArtifact(arg0 : org.apache.maven.artifact.Artifact) : org.apache.maven.artifact.Artifact </td></tr>
 <tr><td align="left" balign="left"> + getProjectBuildingRequest() : org.apache.maven.project.ProjectBuildingRequest </td></tr>
 <tr><td align="left" balign="left"> + setProjectBuildingRequest(arg0 : org.apache.maven.project.ProjectBuildingRequest) </td></tr>
 		</table></td></tr>
 		</table>>, URL="http://maven.apache.org/ref/current/apidocs/org/apache/maven/project/MavenProject.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.apache.maven.artifact.repository.ArtifactRepository
-	c42 [label=<<table title="org.apache.maven.artifact.repository.ArtifactRepository" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="http://maven.apache.org/ref/current/apidocs/org/apache/maven/artifact/repository/ArtifactRepository.html">
+	c39 [label=<<table title="org.apache.maven.artifact.repository.ArtifactRepository" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="http://maven.apache.org/ref/current/apidocs/org/apache/maven/artifact/repository/ArtifactRepository.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> org.apache.maven.artifact.repository.ArtifactRepository </td></tr>
@@ -288,7 +288,7 @@ digraph G {
 		</table></td></tr>
 		</table>>, URL="http://maven.apache.org/ref/current/apidocs/org/apache/maven/artifact/repository/ArtifactRepository.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.apache.maven.shared.dependency.graph.DependencyGraphBuilder
-	c40 [label=<<table title="org.apache.maven.shared.dependency.graph.DependencyGraphBuilder" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
+	c37 [label=<<table title="org.apache.maven.shared.dependency.graph.DependencyGraphBuilder" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> org.apache.maven.shared.dependency.graph.DependencyGraphBuilder </td></tr>
@@ -302,7 +302,7 @@ digraph G {
 		</table></td></tr>
 		</table>>, URL="null", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// org.apache.maven.artifact.resolver.ArtifactResolver
-	c41 [label=<<table title="org.apache.maven.artifact.resolver.ArtifactResolver" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="http://maven.apache.org/ref/current/apidocs/org/apache/maven/artifact/resolver/ArtifactResolver.html">
+	c38 [label=<<table title="org.apache.maven.artifact.resolver.ArtifactResolver" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="http://maven.apache.org/ref/current/apidocs/org/apache/maven/artifact/resolver/ArtifactResolver.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> org.apache.maven.artifact.resolver.ArtifactResolver </td></tr>

@@ -10,7 +10,7 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// com.edugility.maven.ArtifactsProcessor
-	c51 [label=<<table title="com.edugility.maven.ArtifactsProcessor" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./ArtifactsProcessor.html">
+	c48 [label=<<table title="com.edugility.maven.ArtifactsProcessor" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./ArtifactsProcessor.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> ArtifactsProcessor </td></tr>
@@ -23,7 +23,7 @@ digraph G {
 		</table></td></tr>
 		</table>>, URL="./ArtifactsProcessor.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// com.edugility.maven.ArtifactMojo
-	c53 [label=<<table title="com.edugility.maven.ArtifactMojo" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ArtifactMojo.html">
+	c50 [label=<<table title="com.edugility.maven.ArtifactMojo" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./ArtifactMojo.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> ArtifactMojo </td></tr>
 		</table></td></tr>
@@ -37,6 +37,6 @@ digraph G {
 		</table></td></tr>
 		</table>>, URL="./ArtifactMojo.html", fontname="Helvetica", fontcolor="black", fontsize=10.0];
 	// com.edugility.maven.ArtifactMojo NAVASSOC com.edugility.maven.ArtifactsProcessor
-	c53:p -> c51:p [taillabel="", label="", headlabel="", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
+	c50:p -> c48:p [taillabel="", label="", headlabel="", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
 }
 
