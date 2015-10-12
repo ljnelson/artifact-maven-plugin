@@ -14,7 +14,7 @@
   <parent>
     <groupId>com.edugility</groupId>
     <artifactId>edugility-oss-pluginmanagement-pom</artifactId>
-    <version>6</version>
+    <version>14</version>
   </parent>
 
   <name>Maven Artifact Plugin</name>
@@ -34,7 +34,7 @@
     <dependency>
       <groupId>com.edugility</groupId>
       <artifactId>maven-artifacts</artifactId>
-      <version>1.0.5</version>
+      <version>1.0.9</version>
     </dependency>
 
     <dependency>
@@ -125,12 +125,6 @@
           </configuration>
         </plugin>
 
-        <plugin>
-          <groupId>com.github.github</groupId>
-          <artifactId>site-maven-plugin</artifactId>
-          <version>0.12</version>
-        </plugin>
-
       </plugins>
     </pluginManagement>
 
@@ -159,7 +153,6 @@
       <plugin>
         <groupId>com.github.github</groupId>
         <artifactId>site-maven-plugin</artifactId>
-        <version>0.12</version>
       </plugin>
 
     </plugins>
